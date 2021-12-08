@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f5f8;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+.menu header .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu header .underline {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: #c59d5f;
+}
+
+.menu .filter-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+}
+
+.menu .filter-btns .filter-btn {
+  padding: 0.5rem 0.8rem;
+  margin: 0.8rem;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid #c59d5f;
+  border-radius: 8px;
+  color: #c59d5f;
+  transition: all 0.4s ease-out;
+}
+
+.menu .filter-btns .filter-btn:hover {
+  background-color: #c59d5f;
+  color: white;
+}
+
+.menu .menu-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.menu .menu-item article {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 2rem;
+}
+
+.menu .menu-item-image img {
+  border: 5px solid #c59d5f;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.menu .menu-item-info header {
+  display: flex;
+  justify-content: space-between;
+  color: #102a42;
+  font-size: 1.2rem;
+  border-bottom: dotted gray;
+}
+
+.menu .menu-item-price {
+  color: #c59d5f;
+}
+
+.menu .menu-item-desc {
+  padding-top: 0.8rem;
+  color: #617d98;
+}
+
+@media only screen and (min-width: 770px) {
+  .menu {
+    margin-top: 2rem;
+  }
+  .menu .menu-item {
+    max-width: 700px;
+  }
+  .menu .menu-item article {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu .menu-item-image img {
+    width: 200px;
+    height: 175px;
+  }
+  .menu .menu-item-info {
+    padding-left: 1rem;
+  }
+  .menu .menu-item-info header {
+    font-size: 1.4rem;
+  }
+  .menu .menu-item-desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu {
+    margin-top: 5rem;
+  }
+  .menu header .title {
+    font-size: 2.5rem;
+  }
+  .menu .menu-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+    max-width: 1250px;
+    margin-top: 2rem;
+  }
+}

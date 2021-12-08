@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Menu</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- menu section -->
+    <section class="menu">
+      <!-- title -->
+      <header>
+        <h2 class="title">My Menu</h2>
+        <div class="underline"></div>
+      </header>
+
+      <!-- filter button -->
+      <div class="filter-btns">
+        <button class="filter-btn" data-value="all">All</button>
+        <button class="filter-btn" data-value="breakfast">Breakfast</button>
+        <button class="filter-btn" data-value="lunch">Lunch</button>
+        <button class="filter-btn" data-value="shakes">Shakes</button>
+        <button class="filter-btn" data-value="dinner">Dinner</button>
+      </div>
+
+      <!-- menu -->
+      <div class="menu-item">
+        <article>
+          <div class="menu-item-image">
+            <img src="./images/item-10.jpeg" alt="menu-item" />
+          </div>
+          <div class="menu-item-info">
+            <header>
+              <h3 class="menu-item-title">Steak Dinner</h3>
+              <p class="menu-item-price">$39.99</p>
+            </header>
+            <div class="menu-item-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vel
+                officia repudiandae beatae. Blanditiis aperiam quo quae rem
+                harum voluptatibus?
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="./index.js"></script>
+  </body>
+</html>
